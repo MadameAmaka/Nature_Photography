@@ -66,3 +66,57 @@ p {
 .content-section p {
   font-size: 16px;
 }
+
+
+.btn-branding {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px 75px;
+  text-align: center;
+}
+
+.video-embed {
+  width: 100%;
+  aspect-ratio: 21/9;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-photos {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 6px;
+}
+
+.know-more {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 40px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-photography a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.about-photography a:hover {
+  color: var(--secondary-color);
+  transition: ease-in 200ms;
+}
