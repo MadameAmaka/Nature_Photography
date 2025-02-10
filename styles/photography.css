@@ -1,7 +1,8 @@
 :root {
   --primary-color: white;
   --default-font-family: "poppins", sans-serif;
-  --secondary-color: #462cb2;
+  --secondary-color: grey;
+  --button-color: #462cb2;
 }
 
 body {
@@ -67,9 +68,12 @@ p {
   font-size: 16px;
 }
 
+.grey-text {
+  color: grey;
+}
 
 .btn-branding {
-  background: var(--secondary-color);
+  background: var(--button-color);
   border-radius: 4px;
   color: white;
   font-size: 18px;
@@ -108,7 +112,7 @@ p {
 
 .grid {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -117,6 +121,46 @@ p {
   color: var(--primary-color);
 }
 .about-photography a:hover {
-  color: var(--secondary-color);
-  transition: ease-in 200ms;
+  color: var(--button-color);
+  transition: ease-in-out 200ms;
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    padding: 15px 5px;
+  }
+  .content-section {
+    text-align: center;
+    padding: 0;
+  }
+  .content-section h2 {
+    font-size: 25px;
+  }
+
+  .content-section h3 {
+    font-size: 10px;
+  }
+  .content-section h4 {
+    font-size: 20px;
+  }
+
+  .content-section p {
+    font-size: 14px;
+  }
+
+  .btn-branding {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 5px 50px;
+    margin-bottom: 30px;
+  }
+
+  .video-embed {
+    width: 50%;
+    aspect-ratio: 16/9;
+  }
+  .grid {
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+  }
 }
